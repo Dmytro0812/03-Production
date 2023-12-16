@@ -1,0 +1,503 @@
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .header__logo {
+    display: block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    left: 2rem;
+    top: 2rem;
+  }
+  .nav__list.open {
+    transform: translateX(0%);
+    transition: 1s;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav__list {
+    height: 100%;
+    transform: translateX(-100%);
+    transition: 1s;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    gap: 2rem;
+    color: aliceblue;
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__Link {
+    padding: 1rem;
+  }
+  .background {
+    display: none;
+  }
+  .header__block {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .header__logo {
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 3rem */
+  }
+  .container {
+    margin: 0;
+    margin-left: 1.25rem;
+    padding: 0;
+  }
+  .title__block {
+    gap: 1.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .title__photo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .title__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .title__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .title__title {
+    color: #FFF;
+    font-family: Sen;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .title__popis {
+    color: var(--White, #FFF);
+    font-family: Sen;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .filosofie {
+    display: none;
+  }
+  .dovednosti__block {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+  }
+  .dovednosti__title {
+    color: #FFF;
+    font-family: Sen;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .dovednosti__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+  }
+  .dovednosti__img {
+    margin-bottom: 1.5rem;
+  }
+  .dovednosti__card-title {
+    color: #FFF;
+    font-family: Sen;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 2.25rem */
+  }
+  .projekty {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
+  .projekty__title {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 1.5rem */
+    text-transform: uppercase;
+  }
+  .projekty__nazev {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .projekty__block {
+    padding-right: 1.25rem;
+  }
+  .projekty__cards-frow {
+    width: 100%;
+    gap: 0;
+  }
+  .projekty__card {
+    width: 100%;
+  }
+  .projekty__photo {
+    width: 100%;
+  }
+  .projekty__cards-srow {
+    gap: 0;
+  }
+  .instagram {
+    margin: 0;
+  }
+  .instagram__block {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 100%;
+  }
+  .instagram__info {
+    margin: 0;
+    height: 120%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .instagram__title {
+    width: 10rem;
+    font-size: 2rem;
+  }
+  .instagram__popis {
+    width: 20rem;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+  }
+  .instagram__button {
+    margin-top: 5rem;
+    font-size: 1rem;
+  }
+  .instagram__photo {
+    width: 100%;
+    height: 28.125rem;
+  }
+  .instagram__img {
+    width: 100%;
+  }
+  .foot {
+    margin-top: 20rem;
+    height: 100%;
+  }
+  .foot__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .foot__contacts {
+    display: flex;
+  }
+  .foot__list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .projects__block {
+    position: relative;
+    left: -1.25rem;
+    width: calc(100% + 1.25rem);
+    gap: 7rem;
+  }
+  .projects__photos-block {
+    padding: 0;
+    width: 100%;
+  }
+  .projects__photos-row {
+    width: 100%;
+  }
+  .projects__photo {
+    box-shadow: none;
+  }
+  .projects__videos-block {
+    padding: 0;
+  }
+  .projects__videos-row {
+    padding: 0;
+    margin: 0;
+  }
+  .projects__video {
+    box-shadow: none;
+  }
+  .cenik {
+    margin-bottom: 0;
+  }
+  .cenik__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cenik__card-popis {
+    font-size: 0.5rem;
+  }
+  .fback__block {
+    flex-direction: column;
+  }
+  .fback__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .fback__popis {
+    width: 100%;
+  }
+  .fback__kontakty {
+    display: none;
+  }
+  .fback__form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fback__input {
+    width: 20rem;
+  }
+  .fback__button {
+    width: 20rem;
+  }
+  .fback textarea {
+    width: 20rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    margin-top: 2rem;
+  }
+  .header__logo {
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 3rem */
+  }
+  .container {
+    margin: 0 2.5rem;
+  }
+  .nav__Link {
+    padding: 1.7rem 1.3rem;
+    color: #FFF;
+    font-family: Sen;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.5rem */
+  }
+  .title {
+    margin-top: 10rem;
+  }
+  .title__photo {
+    height: 36rem;
+    width: 70rem;
+  }
+  .title__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .title__title {
+    color: #FFF;
+    font-family: Sen;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .title__popis {
+    color: var(--White, #FFF);
+    font-family: Sen;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.6875rem */
+  }
+  .filosofie__block {
+    display: flex;
+    flex-direction: row;
+  }
+  .filosofie__info {
+    width: 24rem;
+    height: 37.5rem;
+    margin-right: 2.5rem;
+    padding: 0;
+  }
+  .filosofie__title {
+    margin-top: 8rem;
+    font-size: 3.4375rem;
+  }
+  .filosofie__popis {
+    width: 19rem;
+    font-size: 1.125rem;
+  }
+  .filosofie__photo {
+    width: 50%;
+    height: 39.1rem;
+  }
+  .filosofie__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .dovednosti__block {
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .dovednosti__info {
+    width: 100%;
+  }
+  .dovednosti__title {
+    font-size: 3.4375rem;
+  }
+  .dovednosti__popis {
+    width: 100%;
+    font-size: 1.125rem;
+  }
+  .dovednosti__cards {
+    gap: 1.5rem;
+  }
+  .dovednosti__card {
+    width: 20.75rem;
+  }
+  .projekty {
+    margin-bottom: 5rem;
+  }
+  .projekty__nazev {
+    font-size: 3.4375rem;
+  }
+  .projekty__cards-frow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .projekty__card {
+    width: 100%;
+  }
+  .projekty__photo {
+    width: 100%;
+  }
+  .projekty__cards-srow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .instagram__info {
+    width: 50%;
+    margin: 0 2.5rem;
+  }
+  .instagram__title {
+    margin-top: 5rem;
+  }
+  .instagram__popis {
+    margin: 2.31rem 0;
+    width: 19rem;
+  }
+  .instagram__button {
+    margin-top: 9rem;
+  }
+  .instagram__photo {
+    width: 50%;
+  }
+  .foot__info {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+  }
+  .foot__logo {
+    font-size: 3rem;
+  }
+  .foot__list {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+  }
+  .foot__item a {
+    font-size: 1.1rem;
+  }
+  .foot__item a img {
+    width: 30px;
+    margin-top: 0.5rem;
+  }
+  .foot__link {
+    font-size: 0.5rem;
+  }
+  .foot__dev {
+    text-align: left;
+  }
+  .background {
+    display: none;
+  }
+  .fback__block {
+    flex-direction: column;
+  }
+  .fback__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .fback__popis {
+    width: 100%;
+    text-align: center;
+  }
+  .fback__kontakty {
+    display: none;
+  }
+  .fback__form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fback__inputs {
+    width: 100%;
+  }
+  .fback__input {
+    width: 100%;
+  }
+  .fback__button {
+    width: 20rem;
+  }
+  .fback textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+}
