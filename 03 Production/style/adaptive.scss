@@ -1,0 +1,667 @@
+@media screen and (max-width: 767px){
+
+
+.header{
+        &__logo{
+            display: block;
+            margin-right: 1rem;
+            margin-top: 1rem;
+
+        }
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+}
+.active{
+        // background: none;
+}
+.burger{
+        display: block;
+        position: absolute;
+        z-index: 5;
+        left: 2rem;
+        top: 2rem;
+}
+.nav__list.open{
+        transform: translateX(0%);
+        transition: 1s;
+}
+.nav{
+         width: 100%;
+        &__list{
+            height: 100%;
+            transform: translateX(-100%);
+            transition: 1s;
+            display: flex; 
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            gap: 2rem;
+            color: aliceblue;
+            z-index: 4;
+            justify-content: center;
+            align-items: center;
+
+            
+            
+        }
+
+        &__Link{
+            padding: 1rem;
+        }
+}
+.background{
+        display: none;
+}  
+.header {
+    &__block {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        color: #FFF;
+        font-family: Bebas Neue;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 3rem */
+    }
+}
+.container {
+        margin: 0 ;        
+        margin-left: 1.25rem;
+        padding: 0;
+}
+.title {
+
+    &__block {
+        gap: 1.4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__photo {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    &__title {
+
+        color: #FFF;
+        font-family: Sen;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__popis {
+        color: var(--White, #FFF);
+        font-family: Sen;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+    }
+}
+.filosofie {
+    display: none;
+   
+}
+.dovednosti {
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 2.25rem;
+ 
+    }
+
+
+
+    &__title {
+        color: #FFF;
+        font-family: Sen;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2.25rem;
+    }
+
+
+
+    &__img {
+        margin-bottom: 1.5rem;
+    }
+
+    &__card-title {
+        color: #FFF;
+        font-family: Sen;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 2.25rem */
+    }
+
+
+}
+.projekty {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    &__title {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 1.5rem */
+        text-transform: uppercase;
+
+       
+    }
+
+    &__nazev {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__block {
+        padding-right: 1.25rem;
+    }
+
+    &__cards-frow {
+        width: 100%;
+        gap: 0;
+    }
+
+    &__card {
+        width: 100% ;
+    }
+
+    &__photo {
+        width: 100%;
+    }
+
+
+    &__cards-srow {
+        gap: 0;
+    }
+
+  
+}
+.instagram {
+    margin: 0;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        height: 100%;
+    }
+
+    &__info {
+        margin: 0;
+        height: 120%;
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    &__title {
+    
+        width: 10rem;
+        font-size: 2rem;
+
+    }
+
+    &__popis {
+        width: 20rem;
+        font-size: 1.125rem;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    &__button {
+        margin-top: 5rem;
+        font-size: 1rem;
+
+
+    }
+
+    &__photo {
+        width: 100%;
+        height: 28.125rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+.foot {
+    margin-top: 20rem;
+    height: 100%;
+
+
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__contacts {
+        display: flex;
+    }
+
+    &__list {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+.projects {
+
+    &__block {
+        position: relative;
+        left: -1.25rem;
+        width: calc(100% + 1.25rem);
+        gap: 7rem;
+    }
+
+    &__photos-block {
+        padding: 0;
+        width: 100%;
+    }
+
+    &__photos-row {
+        width: 100%;
+    }
+
+    &__photo {
+        box-shadow: none;
+    }
+
+    &__videos-block {
+        padding: 0;
+    }
+
+    &__videos-row {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__video {
+        box-shadow: none;
+    }
+}
+.cenik {
+        margin-bottom: 0;
+
+    	&__card {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+		}
+
+		&__card-popis {
+            font-size: 0.5rem;
+		}
+}
+.fback {
+
+		&__block {
+            flex-direction: column;
+		}
+
+		&__title {
+            font-size: 2rem;
+            text-align: center;
+		}
+
+		&__popis {
+            width: 100%;
+		}
+
+		&__kontakty {
+            display: none;
+		}
+
+		&__form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+		}
+
+		&__input {
+            width: 20rem;
+		}
+
+		&__button {
+            width: 20rem;
+		}
+        textarea{
+            width: 20rem;
+        }
+}
+
+
+
+    
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {    
+.header {
+    margin-top: 2rem;
+
+	&__logo {
+        color: #FFF;
+        font-family: Bebas Neue;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 3rem */
+	}
+}
+.container {
+    margin: 0 2.5rem;
+}
+.nav {
+		&__Link {
+            padding: 1.7rem 1.3rem;
+
+            color: #FFF;
+            font-family: Sen;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 1.5rem */
+		}
+}
+.title {
+        margin-top: 10rem;
+		&__photo {
+            height: 36rem;
+            width: 70rem;
+		}
+
+		&__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+		}
+
+		
+
+		&__title {
+            color: #FFF;
+            font-family: Sen;
+            font-size: 3.125rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+		}
+
+		&__popis {
+            color: var(--White, #FFF);
+            font-family: Sen;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 1.6875rem */
+		}
+}
+.filosofie {
+
+		&__block {
+            display: flex;
+            flex-direction: row;
+
+		}
+
+		&__info {
+            width: 24rem;
+            height: 37.5rem;    
+            margin-right: 2.5rem;
+            padding: 0;
+
+		}
+
+		&__title {
+            margin-top: 8rem;
+            font-size: 3.4375rem;
+		}
+
+		&__popis {
+            width: 19rem;
+            font-size: 1.125rem;
+		}
+
+		&__photo {
+            width: 50%;
+            height: 39.1rem;
+
+		}
+
+		&__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+		}
+}
+.dovednosti {
+
+		&__block {
+            margin-bottom: 7rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+		}
+
+		&__info {
+            width: 100%;
+		}
+
+		&__title {
+            font-size: 3.4375rem;
+		}
+
+		&__popis {
+            width: 100%;
+            font-size: 1.125rem;
+		}
+
+		&__cards {
+            gap: 1.5rem;
+		}
+
+		&__card {
+            width: 20.75rem;
+		}
+
+		
+}
+.projekty {
+        margin-bottom: 5rem;
+
+		&__nazev {
+            font-size: 3.4375rem;
+		}
+
+		&__cards-frow {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 0;
+		}
+
+		&__card {
+            width: 100%;
+		}
+
+		&__photo {
+            width: 100%;
+		}
+
+		&__cards-srow {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 0;
+		}
+}
+.instagram {
+
+
+		&__info {
+            width: 50%;
+            margin: 0 2.5rem;
+		}
+
+		&__title {
+            margin-top: 5rem;
+		}
+
+		&__popis {
+            margin: 2.31rem 0;
+            width: 19rem;
+		}
+
+		&__button {
+            margin-top: 9rem;
+		}
+
+		&__photo {
+            width: 50%;
+		}
+
+}
+.foot {
+
+		&__info {
+            margin: 0 1rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 1rem;
+		}
+
+		&__logo {
+            font-size: 3rem;
+		}
+
+		&__list {
+            display: flex;
+            gap: 1rem;
+            flex-direction: row;
+		}
+
+		&__item {
+            
+        a{
+            font-size: 1.1rem;
+            img{
+                width: 30px;
+                margin-top: 0.5rem;
+            }
+        }
+		}
+
+		&__link {
+            font-size: 0.5rem;
+
+		}
+
+		&__dev {
+            text-align: left;
+		}
+}
+.background{
+        display: none;
+}
+.fback {
+
+    &__block {
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__popis {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__kontakty {
+        display: none;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__inputs {
+        width: 100%;
+
+    }
+
+    &__input {
+        width: 100%;
+
+    }
+
+    &__button {
+        width: 20rem;
+    }
+    textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+}
+
