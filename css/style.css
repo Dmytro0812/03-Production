@@ -226,6 +226,7 @@ html {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 .dovednosti__card {
