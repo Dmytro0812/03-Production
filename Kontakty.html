@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>03 Production</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="/css/adaptive.css" />
     <script defer src="/burger.js"></script>
   </head>
   <body>
@@ -64,7 +64,7 @@
                 </div>
               </div>
             </div>
-            <form action="" class="fback__form" id="contact-form">
+            <form method="post" class="fback__form" id="form">
               <div class="fback__inputs">
                 <label class="fback__label" for="name">Jmeno</label>
                 <input
@@ -77,12 +77,12 @@
                 />
               </div>
               <div class="fback__inputs">
-                <label class="fback__label" for="mail">Email</label>
+                <label class="fback__label" for="email">Email</label>
                 <input
                   class="fback__input"
                   name="Email"
                   type="text"
-                  id="mail"
+                  id="email"
                   required
                   autocomplete="email"
                 />
@@ -97,58 +97,93 @@
                   required
                 ></textarea>
               </div>
-              <input
-                class="fback__button"
-                type="submit"
-                value="Odeslat"
-                id="submit"
-              />
+              <button class="fback__button" id="btn">Odeslat</button>
             </form>
           </div>
         </div>
       </section>
     </main>
     <footer>
-        <div class="foot">
-          <div class="foot__container">
-            <div class="foot__block">
-              <div class="foot__info">
-                <div class="foot__contacts">
-                  <div class="foot__logo">03 PRODUCTION</div>
-                  
-                </div>
-                <ul class="foot__list">
-                  <li class="foot__item">
-                    <a href="index.html" class="foot__link">O Mně</a>
-                  </li>
-                  <li class="foot__item">
-                    <a href="#header" class="foot__link">Kontakty</a>
-                  </li>
-                  <li class="foot__item">
-                    <a href="cenik.html" class="foot__link">Ceník</a>
-                  </li>
-                  <li class="foot__item">
-                    <a href="projects.html" class="foot__link">Moje projekty</a>
-                  </li>
-  
-                  <li class="foot__item">
-                    <a href="https://www.instagram.com/_st_vadym_03/" class="foot__link"><img src="/icons/inst.svg" alt="#" /></a>
-                  </li>
-                  <li class="foot__item">
-                    <a href="https://www.tiktok.com/@_st_vadym_03" class="foot__link"><img src="/icons/tik.svg" alt="#" /></a>
-                  </li>
-                  
-                </ul>
-                <div class="foot__obecne">
-                  <div class="foot__gdpr"><a href="https://www.mvcr.cz/gdpr/clanek/co-je-gdpr.aspx" class="foot__gdpr-link">Ochrana osobních údaju</a></div>
+      <div class="foot">
+        <div class="foot__container">
+          <div class="foot__block">
+            <div class="foot__info">
+              <div class="foot__contacts">
+                <div class="foot__logo">03 PRODUCTION</div>
+              </div>
+              <ul class="foot__list">
+                <li class="foot__item">
+                  <a href="index.html" class="foot__link">O Mně</a>
+                </li>
+                <li class="foot__item">
+                  <a href="#header" class="foot__link">Kontakty</a>
+                </li>
+                <li class="foot__item">
+                  <a href="cenik.html" class="foot__link">Ceník</a>
+                </li>
+                <li class="foot__item">
+                  <a href="projects.html" class="foot__link">Moje projekty</a>
+                </li>
+
+                <li class="foot__item">
+                  <a
+                    href="https://www.instagram.com/_st_vadym_03/"
+                    class="foot__link"
+                    ><img src="/icons/inst.svg" alt="#"
+                  /></a>
+                </li>
+                <li class="foot__item">
+                  <a
+                    href="https://www.tiktok.com/@_st_vadym_03"
+                    class="foot__link"
+                    ><img src="/icons/tik.svg" alt="#"
+                  /></a>
+                </li>
+              </ul>
+              <div class="foot__obecne">
+                <div class="foot__gdpr">
+                  <a
+                    href="https://www.mvcr.cz/gdpr/clanek/co-je-gdpr.aspx"
+                    class="foot__gdpr-link"
+                    >Ochrana osobních údaju</a
+                  >
                 </div>
               </div>
-              <div class="foot__dev">
-                Copyright © 2023 Powered by <a href=""> Dmytro Bodnar</a>
-              </div>
+            </div>
+            <div class="foot__dev">
+              Copyright © 2023 Powered by <a href=""> Dmytro Bodnar</a>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var body =
+          "Jmeno: " +
+          name +
+          "<br/> Email: " +
+          email +
+          "<br/> Zprava: " +
+          message;
+        Email.send({
+          SecureToken: "b4826606-4419-4aac-be08-0c6ba346c498",
+          To: "bodnardmytro08@gmail.com",
+          From: "kipstonshow@gmail.com",
+          Subject: "Vadym Web",
+          Body: body,
+        }).then((message) => alert("  Odeslano uspěšně "), resetF());
+      });
+
+      function resetF() {
+        document.getElementById("form").reset();
+      }
+    </script>
   </body>
 </html>

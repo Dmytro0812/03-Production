@@ -217,7 +217,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 1rem;
   }
   .foot__contacts {
     display: flex;
@@ -501,11 +500,4 @@
     width: 100%;
     max-width: 100%;
   }
-}
-
-
-@media screen and (min-width: 1200px) {
-    .background{
-        width: 70%;
-    }
 }
