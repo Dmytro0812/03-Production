@@ -189,6 +189,12 @@
        
     }
 
+    &__img{
+        &:hover{
+            transform: scale(1);
+        }
+    }
+
     &__nazev {
         font-size: 2rem;
         font-style: normal;
@@ -302,7 +308,8 @@
 
     &__photos-block {
         padding: 0;
-        width: 100%;
+        width: 90%;
+        margin: 0 5%;
     }
 
     &__photos-row {
@@ -539,6 +546,11 @@
             width: 100%;
 		}
 
+        &__img{
+            &:hover{
+                transform: scale(1);
+            }
+        }
 		&__cards-srow {
             display: flex;
             align-items: center;

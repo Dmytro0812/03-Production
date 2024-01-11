@@ -148,6 +148,9 @@
     line-height: 150%; /* 1.5rem */
     text-transform: uppercase;
   }
+  .projekty__img:hover {
+    transform: scale(1);
+  }
   .projekty__nazev {
     font-size: 2rem;
     font-style: normal;
@@ -233,7 +236,8 @@
   }
   .projects__photos-block {
     padding: 0;
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
   }
   .projects__photos-row {
     width: 100%;
@@ -411,6 +415,9 @@
   }
   .projekty__photo {
     width: 100%;
+  }
+  .projekty__img:hover {
+    transform: scale(1);
   }
   .projekty__cards-srow {
     display: flex;
